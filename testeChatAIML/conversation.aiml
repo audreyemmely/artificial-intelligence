@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1">
+meta name="language" content="pt-br"/>
+ 
+  <category>
+    <pattern>OI</pattern>
+    <template>
+      <random>
+        <li>Oi!</li>
+        <li>Olá, pode conversar comigo.</li>
+        <li>Oi. Prazer em conhecer você! Qual o seu nome?</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>MEU NOME É *</pattern>
+    <template>
+      <set name="nome"><star/></set> é um nome legal.
+    </template>
+  </category>
+
+  <category>
+    <pattern>O QUE VOCÊ ACHA DE SÉRIES</pattern>
+    <template>Você gosta?</template>  
+  </category>
+   
+  <category>
+    <pattern>SIM</pattern>
+    <that>* GOSTA</that>
+    <template>Legal. Eu gosto de Friends!</template>
+  </category>
+   
+  <category>
+    <pattern>NÃO</pattern>
+    <that>* GOSTA</that>
+    <template>Ah, tudo bem, então!</template>
+  </category> 
+    
+  <category>
+    <pattern>VAMOS FALAR SOBRE FILMES</pattern>
+    <template>Sim, <set name="topic">filmes</set></template>
+  </category>
+
+  <topic name = "FILMES">
+    <category>
+      <pattern> * </pattern>
+      <template>
+      Assistir bons filmes faz bem para a mente. 
+      </template>
+    </category>
+  </topic>
+
+  <category>
+   <pattern> EU GOSTO DE ASSISTIR COMÉDIA! </pattern>
+   <template>Eu gosto de comédia também.</template>
+  </category>
+
+</aiml>
