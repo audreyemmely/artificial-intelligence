@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1">
+meta name="language" content="pt-br"/>
+ 
+  <category>
+    <pattern>OI</pattern>
+    <template>
+      <random>
+        <li>Oi!</li>
+        <li>Olá, pode fazer seu pedido.</li>
+        <li>Oi. Qual o seu pedido?</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* COMPRAR * PIZZA</pattern>
+    <template>Qual é o sabor da pizza?</template>
+  </category>
+
+  <category>
+    <pattern>SABOR *</pattern>
+    <template>Certo, pizza de <set name="sabor"><star/></set> confirmada. Gostaria de um refrigerante em lata para acompanhar?</template>  
+  </category>
+   
+  <category>
+    <pattern>SIM</pattern>
+    <that>* ACOMPANHAR</that>
+    <template>Qual o refrigerante de sua preferência? Coca-cola, Guaraná ou Fanta</template>
+  </category>
+   
+  <category>
+    <pattern>NÃO</pattern>
+    <that>* ACOMPANHAR</that>
+    <template>Ok. O total a pagar ficou R$30.00. Pode me passar o endereço para entrega?</template>
+  </category> 
+  
+  <category>
+    <pattern>*</pattern>
+    <that>* FANTA</that>
+    <template>Ok, adicionado. O total a pagar ficou R$35.00. Pode me passar o endereço para entrega?</template>
+  </category> 
+
+  <category>
+    <pattern>O ENDEREÇO É *</pattern>
+    <template>Pedido realizado com sucesso! Estimativa de entrega: 40 a 50 minutos. Obrigada pela preferência. Volte sempre!</template>
+  </category>
+
+</aiml>
