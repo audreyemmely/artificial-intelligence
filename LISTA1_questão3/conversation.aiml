@@ -43,7 +43,19 @@ meta name="language" content="pt-br"/>
 
   <category>
     <pattern>O ENDEREÇO É *</pattern>
-    <template>Pedido realizado com sucesso! Estimativa de entrega: 40 a 50 minutos. Obrigada pela preferência. Volte sempre!</template>
+    <template>Ok. Qual a forma de pagamento... cartão ou dinheiro?</template>
+  </category>
+
+  <category>
+    <pattern>CARTÃO *</pattern>
+    <template>Pedido realizado com sucesso! Estimativa do tempo de entrega: 40 a 50 minutos. Obrigada pela preferência. Volte sempre!
+    </template>
+  </category>
+
+  <category>
+    <pattern>DINHEIRO</pattern>
+    <template>Pedido realizado com sucesso! Estimativa do tempo de entrega: 40 a 50 minutos. Obrigada pela preferência. Volte sempre!
+    </template>
   </category>
 
 </aiml>
