@@ -20,7 +20,6 @@ meta name="language" content="pt-br"/>
     </template>
   </category>
 
-
   <category>
     <pattern>MEU NOME É *</pattern>
     <template>
@@ -63,6 +62,94 @@ meta name="language" content="pt-br"/>
   <category>
    <pattern> EU GOSTO DE ASSISTIR COMÉDIA </pattern>
    <template>Eu gosto de comédia também.</template>
+  </category>
+
+  <category>
+   <pattern>MEU NAMORADO * GOSTA DE FILMES DE TERROR</pattern>
+    <template>
+      <set name="namorado"><star/></set> é muito corajoso!
+    </template>
+  </category>
+
+  <category>
+    <pattern>VOCÊ GOSTA DE REALITY SHOW</pattern>
+    <template>
+      <random>
+        <li>Gosto sim! Acho muito legal. </li>
+        <li> Gosto um pouco... não acho tão legal assim. </li>
+        <li> Depende do reality show. Não gosto de todos, apenas alguns.</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>QUAL É O MEU NOME</pattern>
+    <template>Seu nome é <get name="nome"/>.</template>
+  </category>
+
+  <category>
+    <pattern>COMO VOCÊ ESTÁ</pattern>
+    <template>
+      <random>
+        <li>Eu estou bem. E você?</li>
+        <li>Você está perguntando como eu estou? Bom, eu estou bem... E você?</li>
+        <li>Eu estou ok. E você?</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>TUDO BEM * </pattern>
+    <template>
+      <srai>COMO VOCÊ ESTÁ</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>EU ESTOU *</pattern>
+    <template>Que bom!</template>
+  </category>
+
+  <category>
+    <pattern>QUAIS SÃO AS CORES PRIMÁRIAS</pattern>
+    <template>Vermelho, verde e azul.</template>
+  </category>
+
+  <category>
+    <pattern>QUAL A COR DO CÉU</pattern>
+    <template>Azul.</template>
+  </category>
+
+  <category>
+    <pattern>O QUE É HTML</pattern>
+    <template>
+    HTML é uma das linguagens que utilizamos para desenvolver websites. O acrônimo HTML vem do inglês e significa Hypertext Markup Language ou em português Linguagem de Marcação de Hipertexto.
+    </template>
+  </category>
+
+  <category>
+    <pattern>O QUE É CIÊNCIA DA COMPUTAÇÃO</pattern>
+    <template>O estudo dos computadores em termos matemáticos e científicos.</template>
+  </category>
+
+  <category>
+    <pattern>O QUE É UM CIENTISTA DA COMPUTAÇÃO</pattern>
+    <template>
+    Um cientista da computação é um profissional que projeta algoritmos de computador, linguagens e arquiteturas.
+    </template>
+  </category>
+
+  <category>
+    <pattern>TCHAU</pattern>
+    <template>
+      <random>
+        <li>Tchau</li>
+        <li>Foi legal falar com você.</li>
+        <li>Vamos conversar de novo amanhã :) </li>
+        <li>Espero que você tenha se divertido.</li>
+        <li>Tchau, se cuide.</li>
+      </random>
+    </template>
   </category>
 
 </aiml>
